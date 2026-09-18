@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/run",
-      "destination": "https://meu-site-run.vercel.app"
+      "destination": "https://jjoaorunner.vercel.app"
     },
     {
       "source": "/run/:path*",
-      "destination": "https://meu-site-run.vercel.app/:path*"
+      "destination": "https://jjoaorunner.vercel.app/:path*"
     },
     {
       "source": "/code",
-      "destination": "https://meu-site-code.vercel.app"
+      "destination": "https://jjoaocode.vercel.app"
     },
     {
       "source": "/code/:path*",
-      "destination": "https://meu-site-code.vercel.app/:path*"
+      "destination": "https://jjoaocode.vercel.app/:path*"
     }
   ]
 }
