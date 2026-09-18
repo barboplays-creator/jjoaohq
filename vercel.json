@@ -2,7 +2,11 @@
   "rewrites": [
     {
       "source": "/run",
-      "destination": "https://jjoaorunner.vercel.app"
+      "destination": "https://jjoaorunner.vercel.app/"
+    },
+    {
+      "source": "/run/",
+      "destination": "https://jjoaorunner.vercel.app/"
     },
     {
       "source": "/run/:path*",
@@ -10,7 +14,11 @@
     },
     {
       "source": "/code",
-      "destination": "https://jjoaocode.vercel.app"
+      "destination": "https://jjoaocode.vercel.app/"
+    },
+    {
+      "source": "/code/",
+      "destination": "https://jjoaocode.vercel.app/"
     },
     {
       "source": "/code/:path*",
