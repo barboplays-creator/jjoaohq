@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/run",
+      "source": "/run/",
       "destination": "https://jjoaorunner.vercel.app/"
     },
     {
@@ -10,7 +10,7 @@
       "destination": "https://jjoaorunner.vercel.app/:match*"
     },
     {
-      "source": "/code",
+      "source": "/code/",
       "destination": "https://jjoaocode.vercel.app/"
     },
     {
