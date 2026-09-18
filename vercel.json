@@ -2,28 +2,32 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/run",
-      "destination": "https://jjoaorunner.vercel.app/"
-    },
-    {
       "source": "/run/",
       "destination": "https://jjoaorunner.vercel.app/"
     },
     {
-      "source": "/run/:path*",
-      "destination": "https://jjoaorunner.vercel.app/:path*"
-    },
-    {
-      "source": "/code",
-      "destination": "https://jjoaocode.vercel.app/"
+      "source": "/run/:match*",
+      "destination": "https://jjoaorunner.vercel.app/:match*"
     },
     {
       "source": "/code/",
       "destination": "https://jjoaocode.vercel.app/"
     },
     {
-      "source": "/code/:path*",
-      "destination": "https://jjoaocode.vercel.app/:path*"
+      "source": "/code/:match*",
+      "destination": "https://jjoaocode.vercel.app/:match*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/run",
+      "destination": "/run/",
+      "permanent": false
+    },
+    {
+      "source": "/code",
+      "destination": "/code/",
+      "permanent": false
     }
   ]
 }
