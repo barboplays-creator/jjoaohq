@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/run",
-      "destination": "https://jjoaorunner.vercel.app"
+      "destination": "https://jjoaorunner.vercel.app/"
     },
     {
       "source": "/run/:path*",
