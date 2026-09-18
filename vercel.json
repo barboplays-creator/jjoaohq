@@ -1,13 +1,21 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "routes": [
+  "rewrites": [
     {
-      "src": "^/run/?(.*)$",
-      "dest": "https://jjoaorunner.vercel.app/$1"
+      "source": "/run",
+      "destination": "https://jjoaorunner.vercel.app/"
     },
     {
-      "src": "^/code/?(.*)$",
-      "dest": "https://jjoaocode.vercel.app/$1"
+      "source": "/run/:match*",
+      "destination": "https://jjoaorunner.vercel.app/:match*"
+    },
+    {
+      "source": "/code",
+      "destination": "https://jjoaocode.vercel.app/"
+    },
+    {
+      "source": "/code/:match*",
+      "destination": "https://jjoaocode.vercel.app/:match*"
     }
   ]
 }
