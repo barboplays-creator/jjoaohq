@@ -14,15 +14,15 @@
     },
     {
       "source": "/code",
-      "destination": "https://jjoaocode.vercel.app/"
+      "destination": "https://jjoaocode-bio.vercel.app/"
     },
     {
       "source": "/code/",
-      "destination": "https://jjoaocode.vercel.app/"
+      "destination": "https://jjoaocode-bio.vercel.app/"
     },
     {
       "source": "/code/:path*",
-      "destination": "https://jjoaocode.vercel.app/:path*"
+      "destination": "https://jjoaocode-bio.vercel.app/:path*"
     }
   ]
 }
